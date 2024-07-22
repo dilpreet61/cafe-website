@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Cafe in India| royalcafe.com</title>
+    <link href="https://fonts.googleapis.coma/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        /* Navigation Bar */
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        /* Navigation Bar: Logo and Image */
+        #logo {
+            margin: 10px 34px;
+        }
+
+        #logo img {
+            height: 59px;
+            margin: 3px 6px;
+            border-radius: 50% 50%;
+        }
+
+
+        /* Navigation Bar: List Styling */
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            margin: 25px 0;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        /* Home Section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 550px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            background: url(https://img.freepik.com/premium-photo/cup-coffee-cookies-table-with-cup-coffee_1034910-60739.jpg?w=1060) no-repeat center center/cover;
+            height: 642px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+
+        #home h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        #home p {
+            color: rgb(14, 12, 12);
+            text-align: center;
+            font-size: 2.1rem;
+            font-family: 'Tangerine', cursive;
+        }
+        /* Contact Section */
+        #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url('https://img.freepik.com/free-photo/croissants-coffee-breakfast_23-2147758271.jpg?ga=GA1.1.1960410411.1720779447') no-repeat center center/cover;
+
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box input {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+
+        footer {
+            background: black;
+            color: white;
+            padding: 9px 20px;
+        }
+
+        /* Utility Classes */
+        .h-primary {
+            font-family: 'Bree Serif', serif;
+            font-size: 3.8rem;
+            padding: 12px;
+            font-family: 'Ubuntu Condensed', sans-serif;
+        }
+
+        .h-secondary {
+            font-size: 2.3rem;
+
+            font-family: 'Kaushan Script', cursive;
+            padding: 12px;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer; 
+            text-decoration: none;
+            font-family: 'Righteous', cursive;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .submit {
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<header id="navbar">
+    <nav>
+        <ul>
+            <div id="logo">
+                <img src="https://th.bing.com/th?id=OIP.rBB2ND8RaF_EUqtgzuyKIQHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                    alt="logo">
+            </div>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="menu.html">Menu</a></li>
+            <li class="item"><a href="form.html">Orders</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <section id="home">
+        <h1 class="h-primary">Welcome to The Royal Cafe</h1>
+        <p>Step into a world of warmth and comfort at our Royal cafe. Whether you're starting your day with a rich,
+            aromatic coffee or unwinding with a soothing tea, our inviting atmosphere is the perfect escape from the
+            hustle and bustle.</p>
+        <a href="menu.html" class="btn">View items</a>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="center">Copyright &copy; www.royalcafe.com. All rights reserved!</div>
+</footer>
+
+</html>
